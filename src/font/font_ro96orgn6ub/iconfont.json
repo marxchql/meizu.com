@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1358731",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "3154886",
+      "name": "对比 (2)",
+      "font_class": "duibi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3284457",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e735",
+      "unicode_decimal": 59189
+    },
+    {
+      "icon_id": "3295907",
+      "name": "魅族",
+      "font_class": "meizu",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "4972555",
+      "name": "问号",
+      "font_class": "wenhao",
+      "unicode": "ea2c",
+      "unicode_decimal": 59948
+    },
+    {
+      "icon_id": "5781310",
+      "name": "收 藏 (2)",
+      "font_class": "shoucang",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "6927542",
+      "name": "左箭头",
+      "font_class": "arrow-right-copy-copy",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "9801506",
+      "name": "右箭头",
+      "font_class": "arrow-right",
+      "unicode": "e54b",
+      "unicode_decimal": 58699
+    },
+    {
+      "icon_id": "11338603",
+      "name": "加号",
+      "font_class": "hao",
+      "unicode": "e506",
+      "unicode_decimal": 58630
+    },
+    {
+      "icon_id": "12395617",
+      "name": "我 的",
+      "font_class": "wode",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "13845762",
+      "name": "购物 车",
+      "font_class": "gouwuche",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "14801031",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e6d1",
+      "unicode_decimal": 59089
+    },
+    {
+      "icon_id": "14925088",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e554",
+      "unicode_decimal": 58708
+    },
+    {
+      "icon_id": "15140304",
+      "name": "更多",
+      "font_class": "gengduo1",
+      "unicode": "e510",
+      "unicode_decimal": 58640
+    }
+  ]
+}
