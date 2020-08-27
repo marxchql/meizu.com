@@ -7,6 +7,8 @@
     <title>MEIZU</title>
     <link rel="stylesheet" href="../font/font_ro96orgn6ub/iconfont.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -45,6 +47,46 @@
             <span class="iconfont icon-gouwuche"></span>
         </nav>
     </header>
+    <!-- 轮播图 -->
+
+
+    <div class="swiper-container" style="background-color: aquamarine;">
+        <!-- 顶部导航栏 -->
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: url(../img/banner1.jpg)  -530px 0;">
+            </div>
+            <div class="swiper-slide" style="background: url(../img/banner2.jpg)  -530px 0;">
+            </div>
+            <div class="swiper-slide" style="background: url(../img/banner3.jpg)  -530px 0;">
+            </div>
+            <div class="swiper-slide" style="background: url(../img/banner4.jpg)  -530px 0;">
+            </div>
+            <div class="swiper-slide" style="background: url(../img/banner5.jpg)  -530px 0;">
+            </div>
+            <div class="swiper-slide" style="background: url(../img/banner6.jpg)  -530px 0;">
+            </div>
+
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay: true,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+        })
+    </script>
 </body>
 <!-- <script>
     0
