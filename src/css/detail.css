@@ -1,0 +1,509 @@
+header {
+  width: 100%;
+  height: 82px;
+  position: absolute;
+  top: 0px;
+  z-index: 9999;
+}
+header nav {
+  width: 1236px;
+  margin: 0 auto;
+  height: 80px;
+}
+header nav > span:first-child {
+  color: black;
+  font-size: 22px ;
+  color: #006bcf;
+  line-height: 82px;
+  margin-right: 80px;
+}
+header nav > ul {
+  list-style: none;
+  font-size: 14px;
+  color: gray;
+  display: inline-block;
+}
+header nav > ul > li {
+  float: left;
+  margin-left: 34px;
+}
+header nav > ul > li a {
+  text-decoration: none;
+  color: black;
+}
+header nav > ul li:last-child {
+  cursor: pointer;
+  color: black;
+  margin-right: 20px;
+  position: relative;
+}
+header nav > ul li:last-child div {
+  transition: all 0.4s;
+  width: 100vw;
+  z-index: 9999;
+  height: 0px;
+  position: absolute;
+  top: 70px;
+  left: -980px;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+header nav > ul li:last-child div img {
+  width: 1400px;
+  height: 340px;
+}
+header nav > ul li:last-child:hover div {
+  height: 340px;
+}
+header nav .search {
+  display: inline-block;
+  width: 180px;
+  height: 30px;
+  border-radius: 17px;
+  background-color: white;
+  margin-top: -10px;
+  vertical-align: middle;
+  border: solid 1px gray;
+  overflow: hidden;
+}
+header nav .search input {
+  margin: 0 10px;
+  width: 130px;
+  position: relative;
+  top: -2px;
+  font-size: 12px;
+  color: gray;
+  border: none;
+  outline: none;
+}
+header nav .search span {
+  font-weight: bold;
+  line-height: 30px;
+  cursor: pointer;
+}
+header nav span.icon-wode,
+header nav .icon-gouwuche {
+  cursor: pointer;
+  line-height: 80px;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+header nav span.icon-wode {
+  display: inline-block;
+  position: relative;
+}
+header nav span.icon-wode .user {
+  position: absolute;
+  top: 60px;
+  left: -30px;
+  list-style: none;
+  transition: all 0.2s;
+  line-height: 100%;
+  background-color: white;
+  box-shadow: 0 6px 8px 0 rgba(138, 153, 150, 0.35);
+  width: 80px;
+  height: 0px;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: hidden;
+}
+header nav span.icon-wode .user > li {
+  margin: 10px ;
+  text-align: center;
+}
+header nav span.icon-wode .user > li > a {
+  text-decoration: none;
+  color: gray;
+}
+header nav span.icon-wode .user > li > a:hover {
+  color: black;
+}
+header nav span.icon-wode:hover .user {
+  height: 100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 1000px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.meizu17pro_wrap {
+  position: absolute;
+  top: 82px;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(173, 173, 173, 0.178);
+}
+.meizu17pro_wrap .meizu17pro_title {
+  width: 1236px;
+  height: 80px;
+  margin: 0 auto;
+}
+.meizu17pro_wrap .meizu17pro_title ul {
+  list-style: none;
+  float: right;
+}
+.meizu17pro_wrap .meizu17pro_title ul li {
+  float: right;
+  margin: 0 10px;
+  line-height: 70px;
+}
+.meizu17pro_wrap .meizu17pro_title ul li a {
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 16px;
+  border-left: 1px solid #979797;
+  font-size: 16px;
+  color: #3b3b3b;
+}
+.meizu17pro_wrap .meizu17pro_title ul > li:last-of-type a {
+  border: none;
+}
+.meizu17pro_wrap .meizu17pro_title span {
+  font-size: 24px;
+  line-height: 70px;
+}
+.main {
+  user-select: none;
+  width: 1236px;
+  height: 1000px;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding-top: 100px;
+}
+.main .phoneDetail_left {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 500px;
+}
+.main .phoneDetail_left .bigimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .phoneDetail_left .bigimg img {
+  width: 500px;
+  height: 500px;
+}
+.main .phoneDetail_left ul {
+  list-style: none;
+  position: absolute;
+  top: 504px;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+}
+.main .phoneDetail_left ul li {
+  float: left;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 0 27px;
+}
+.main .phoneDetail_left ul li img {
+  width: 70px;
+  height: 70px;
+}
+.main .phoneDetail_right {
+  float: right;
+  width: 700px;
+  height: 1000px;
+}
+.main .phoneDetail_right .title {
+  margin-top: 50px;
+}
+.main .phoneDetail_right .title p {
+  text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+.main .phoneDetail_right .title p:nth-child(2) {
+  color: #e60000;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 8px 0;
+  line-height: 22px;
+}
+.main .phoneDetail_right .price {
+  text-align: left;
+  background-color: #f4f6fa;
+  padding: 10px;
+  border-radius: 14px;
+}
+.main .phoneDetail_right .price p {
+  font-size: 34px;
+  color: #e02b41;
+  margin-bottom: 8px;
+}
+.main .phoneDetail_right .price span:nth-of-type(1) {
+  display: inline-block;
+  width: 80px;
+  height: 26px;
+  font-size: 14px;
+  background-color: rgba(255, 195, 195, 0.336);
+  text-align: center;
+  line-height: 26px;
+  border-radius: 4px;
+  color: #e02b41;
+}
+.main .phoneDetail_right .price span:nth-of-type(2) {
+  font-size: 14px;
+  text-align: center;
+  color: #505050;
+}
+.main .phoneDetail_right .price a {
+  color: #0077ff;
+  font-size: 14px;
+}
+.main .phoneDetail_right .bought {
+  width: 100%;
+}
+.main .phoneDetail_right .bought button {
+  border: 1px solid #9b9b9b;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 194px;
+  height: 50px;
+  margin: 0 4px;
+  font-size: 15px;
+}
+.main .phoneDetail_right .bought div > span:first-child {
+  display: inline-block;
+  width: 50px;
+  font-size: 12px;
+  margin: 4px 0;
+  margin-right: 20px;
+}
+.main .phoneDetail_right .bought .huabei {
+  margin-top: 20px;
+  font-size: 12px;
+  color: gray;
+}
+.main .phoneDetail_right .bought .huabei .iconfont {
+  margin: 0 6px;
+}
+.main .phoneDetail_right .bought .deliver {
+  color: gray;
+  font-size: 12px;
+  margin: 4px 0;
+}
+.main .phoneDetail_right .bought .deliver a {
+  color: #0077ff;
+}
+.main .phoneDetail_right .bought .type {
+  margin-top: 30px;
+}
+.main .phoneDetail_right .bought .taocan {
+  margin-top: 20px;
+}
+.main .phoneDetail_right .bought .taocan button span {
+  font-size: 12px;
+  color: red;
+  line-height: 50px;
+}
+.main .phoneDetail_right .bought .fenqi {
+  margin-top: 20px;
+}
+.main .phoneDetail_right .bought .fenqi button {
+  font-size: 14px;
+  color: #383838;
+}
+.main .phoneDetail_right .bought .fenqi button span {
+  color: gray;
+  font-size: 12px;
+  line-height: 22px;
+}
+.main .phoneDetail_right .count {
+  margin: 20px 0;
+}
+.main .phoneDetail_right .count button {
+  border: 1px solid #d8d8d8;
+  border-radius: 0px;
+  background-color: #f7f7f7;
+  width: 30px !important;
+  height: 40px;
+  font-size: 12px;
+  margin: 0;
+  outline: none;
+}
+.main .phoneDetail_right .count input {
+  width: 40px;
+  border: none;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  height: 40px;
+  text-indent: 15px;
+  outline: none;
+}
+.main .phoneDetail_right .buy {
+  display: inline-block;
+  width: 190px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #008cff;
+}
+.main .phoneDetail_right .buy:hover {
+  background-color: white;
+  color: #008cff;
+  border: 1px solid #008cff;
+}
+.main .phoneDetail_right .car {
+  display: inline-block;
+  border-radius: 5px ;
+  border: 1px solid #008cff;
+  width: 190px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  color: #008cff;
+  background-color: #ffffff;
+}
+.main .phoneDetail_right .car:hover {
+  background-color: #008cff;
+  color: white;
+  border: none;
+}
+.detail_wrap {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+.detail_wrap .detail_of_thing {
+  text-align: center;
+  width: 1236px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.detail_wrap .detail_of_thing img {
+  width: 1236px;
+}
+.footerWrp {
+  user-select: none;
+  width: 1236px;
+  height: 260px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.footerWrp .footer_Left {
+  float: left;
+  width: 1000px;
+  background-color: #ffffff;
+}
+.footerWrp .footer_Left > ul {
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 120px;
+}
+.footerWrp .footer_Left > ul li {
+  width: 110px;
+  height: 110px;
+  background-color: #ffffff;
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 15px;
+}
+.footerWrp .footer_Left > ul li img {
+  width: 40px;
+  height: 36px;
+}
+.footerWrp .footer_Left > ul li a {
+  text-decoration: none;
+  color: #979797;
+  font-size: 12px;
+}
+.footerWrp .footer_Left > p {
+  float: left;
+}
+.footerWrp .footer_Left > p a {
+  display: inline-block;
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 13px;
+  margin: 0 4px;
+  padding-right: 13px;
+  border-right: 1px solid gray;
+}
+.footerWrp .footer_Left > p a:last-child {
+  border: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.footerWrp .footer_Left > p a:nth-last-child(2) {
+  border: none;
+}
+.footerWrp .footer_right {
+  width: 200px;
+  float: right;
+  padding-top: 50px;
+  position: relative;
+}
+.footerWrp .footer_right p {
+  text-align: right;
+  width: 100%;
+  font-size: 12px;
+  color: gray;
+}
+.footerWrp .footer_right span {
+  display: inline-block;
+  margin: 4px 0;
+  text-align: right;
+  width: 100%;
+  font-size: 20px;
+  color: #0084ff;
+}
+.footerWrp .footer_right div {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  float: right;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  background-color: #0084ff;
+  border-radius: 15px;
+}
+.footerWrp .footer_right ul {
+  position: absolute;
+  float: right;
+  top: 200px;
+  right: 0;
+  width: 186px;
+  height: 40px;
+}
+.footerWrp .footer_right ul li {
+  list-style: none;
+  float: left;
+  background-color: #fff;
+}
+.footerWrp .footer_right ul li img {
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin: 0 12px;
+}

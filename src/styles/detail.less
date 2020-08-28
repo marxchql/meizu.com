@@ -1,0 +1,305 @@
+@import "../styles/header.less";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 1000px;
+    // background-color: cadetblue;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+.meizu17pro_wrap{
+    position: absolute;
+    top: 82px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(173, 173, 173, 0.178);
+    .meizu17pro_title{
+        width: 1236px;
+        height: 80px;
+        margin: 0 auto;
+        ul{
+            list-style: none;
+            float: right;
+            li{
+                float: right;
+                margin: 0 10px;
+                line-height: 70px;
+                a{
+                    display: inline-block;
+                    padding-left: 20px;
+                    line-height: 16px;
+                    border-left: 1px solid rgb(151, 151, 151);
+                    font-size: 16px;
+                    color: rgb(59, 59, 59);
+                    
+                }
+                       
+            }
+            &>li:last-of-type a {
+                border: none;
+            }
+        }
+                span{
+                    font-size: 24px;
+                    line-height: 70px;
+                }
+    }
+
+}
+
+.main{
+    user-select: none;
+    width: 1236px;
+    height: 1000px;
+    margin: 0 auto;
+    // background-color: green;
+    margin-top: 70px;
+    padding-top: 100px;
+    .phoneDetail_left{
+        position: relative;
+        float: left;
+        width: 500px;
+        height: 500px;
+        .bigimg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            img{
+                width:500px;
+                height: 500px;
+
+            }
+        }
+      ul{
+          list-style: none;
+          position: absolute;
+          top: 504px;
+          margin: 0 auto;
+          width: 100%;
+          height: 200px;
+          li{
+              float: left;
+              cursor: pointer;
+              background-color: #fff;
+              margin: 0 27px;
+              img{
+                  width: 70px;
+                  height: 70px;
+              }
+          }
+      }
+    }
+
+    .phoneDetail_right{
+        float: right;
+        width: 700px;
+        height: 1000px;
+        .title{
+            margin-top: 50px;
+            p{
+                text-align: left;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            p:nth-child(2){
+                color: rgb(230, 0, 0);
+                font-size: 14px;
+                font-weight: normal;
+                margin: 8px 0;
+                // word-spacing: 2px;
+                line-height: 22px;
+            }
+        }
+        .price{
+            text-align: left;
+            background-color: rgb(244, 246, 250);
+            padding: 10px;
+            border-radius: 14px;
+            p{
+               font-size: 34px;
+               color: rgb(224, 43, 65); 
+               margin-bottom: 8px;
+            }
+            span:nth-of-type(1){
+                display: inline-block;
+                width: 80px;
+                height: 26px;
+                font-size: 14px;
+                background-color: rgba(255, 195, 195, 0.336);
+                text-align: center;
+                line-height: 26px;
+                border-radius: 4px;
+                color: rgb(224, 43, 65);
+            }
+            span:nth-of-type(2){
+                font-size: 14px;
+                text-align: center;
+                color: rgb(80, 80, 80);
+            }
+            a{
+                color: rgb(0, 119, 255);
+                font-size: 14px;
+            }
+        }
+        .bought{
+            width: 100%;
+            button{
+                // border: none;
+                // outline: none;
+                border: 1px solid rgb(155, 155, 155);       
+                border-radius: 4px;
+                background-color: transparent;
+                width: 194px;
+                height: 50px; 
+                margin: 0 4px;
+                font-size: 15px;
+
+                // background-color: gray;  
+          }
+            div>span:first-child{
+                display: inline-block;
+                width: 50px;
+                font-size: 12px;
+                // height: 50px;
+                // line-height: 50px;
+                margin: 4px 0;
+                margin-right: 20px;
+            }
+            .huabei{
+                margin-top: 20px;
+                font-size: 12px;
+                color: gray;
+                .iconfont{
+                    margin: 0 6px;
+                }
+            }
+            .deliver{
+                color: gray;
+                font-size: 12px;
+                margin: 4px 0;
+                a{
+                    color: rgb(0, 119, 255);
+                }
+            }
+            .type{
+                margin-top: 30px;
+            }
+            .taocan{
+                margin-top: 20px;
+                button{
+
+                    span{
+                        font-size: 12px;
+                        color: red;
+                        line-height: 50px;
+                    }
+                }
+            }
+            .fenqi{
+                
+                margin-top: 20px;
+                button{
+                    font-size: 14px;
+                    color: rgb(56, 56, 56);
+                    span{
+                        color: gray;
+                        font-size: 12px;
+                        line-height: 22px;
+                        
+                    }
+                }
+            }
+        }
+         .count{
+             margin: 20px 0;
+            button{
+                border: 1px solid rgb(216, 216, 216);       
+             border-radius: 0px;
+                background-color: rgb(247, 247, 247);
+                width: 30px !important;
+                height: 40px; 
+                font-size: 12px;
+                margin: 0;
+                outline: none;
+              
+             }
+             input{
+                //  position: r
+                 width: 40px;
+                 border: none;
+                 border-top: 1px solid rgb(230, 230, 230);
+                 border-bottom: 1px solid rgb(230, 230, 230);
+                 height: 40px;
+                 text-indent: 15px;
+                //  border: none;
+                 outline: none;
+             }
+        }
+        .buy{
+            display: inline-block;
+            width: 190px;
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            color: white;
+            margin-right: 20px;
+
+            border-radius: 5px;
+            background-color: rgb(0, 140, 255);
+            &:hover{
+                // background-color: rgb(0, 109, 199);
+                background-color: white;
+                color: rgb(0, 140, 255);
+                border: 1px solid rgb(0, 140, 255);
+            }
+        }
+        .car{
+            display: inline-block;
+            border-radius: 5px ;
+            border: 1px solid rgb(0, 140, 255);
+            width: 190px;
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            color: rgb(0, 140, 255);
+            background-color: rgb(255, 255, 255);
+            &:hover{
+                background-color: rgb(0, 140, 255);
+                color: white;
+                border: none;
+            }
+        }
+    }
+
+}
+
+.detail_wrap{
+    margin-top: 50px;
+    width: 100%;
+    // height: 100%;
+    background-color: rgb(240, 240, 240);
+    .detail_of_thing{
+        text-align: center;
+        width: 1236px;
+        // height: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        img{
+            width: 1236px;
+        }
+
+    }
+}
+@import '../styles/footer.less';

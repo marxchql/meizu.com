@@ -1,0 +1,110 @@
+.footerWrp {
+  user-select: none;
+  width: 1236px;
+  height: 260px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.footerWrp .footer_Left {
+  float: left;
+  width: 1000px;
+  background-color: #ffffff;
+}
+.footerWrp .footer_Left > ul {
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 120px;
+}
+.footerWrp .footer_Left > ul li {
+  width: 110px;
+  height: 110px;
+  background-color: #ffffff;
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 15px;
+}
+.footerWrp .footer_Left > ul li img {
+  width: 40px;
+  height: 36px;
+}
+.footerWrp .footer_Left > ul li a {
+  text-decoration: none;
+  color: #979797;
+  font-size: 12px;
+}
+.footerWrp .footer_Left > p {
+  float: left;
+}
+.footerWrp .footer_Left > p a {
+  display: inline-block;
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 13px;
+  margin: 0 4px;
+  padding-right: 13px;
+  border-right: 1px solid gray;
+}
+.footerWrp .footer_Left > p a:last-child {
+  border: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.footerWrp .footer_Left > p a:nth-last-child(2) {
+  border: none;
+}
+.footerWrp .footer_right {
+  width: 200px;
+  float: right;
+  padding-top: 50px;
+  position: relative;
+}
+.footerWrp .footer_right p {
+  text-align: right;
+  width: 100%;
+  font-size: 12px;
+  color: gray;
+}
+.footerWrp .footer_right span {
+  display: inline-block;
+  margin: 4px 0;
+  text-align: right;
+  width: 100%;
+  font-size: 20px;
+  color: #0084ff;
+}
+.footerWrp .footer_right div {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  float: right;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  background-color: #0084ff;
+  border-radius: 15px;
+}
+.footerWrp .footer_right ul {
+  position: absolute;
+  float: right;
+  top: 200px;
+  right: 0;
+  width: 186px;
+  height: 40px;
+}
+.footerWrp .footer_right ul li {
+  list-style: none;
+  float: left;
+  background-color: #fff;
+}
+.footerWrp .footer_right ul li img {
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin: 0 12px;
+}
