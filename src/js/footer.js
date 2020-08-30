@@ -53,9 +53,11 @@ let footer = `
     <ul>
         <li>
             <img src="../img/footer/weixin.png" alt="">
-        </li>
-        <li>
+            <img src="../img/weixinad.png" class="weixin_adver" alt="">
+            </li>
+            <li>
             <img src="../img/footer/lainjie.png" alt="">
+            <img src="../img/lianjiead.png" class="lianjie_adver" alt="">
         </li>
         <li>
             <img src="../img/footer/weixin.png" alt="">

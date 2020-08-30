@@ -2,10 +2,10 @@ let header = `
         <nav>
             <span class="iconfont icon-meizu"></span>
             <ul>
-                <li><a href="">手机</a></li>
-                <li><a href="">声学</a></li>
-                <li><a href="">配件</a></li>
-                <li><a href="">生活</a></li>
+                <li id="mobilePhone"><a href="">手机</a></li>
+                <li id="vocal"><a href="">声学</a></li>
+                <li id="parts"><a href="">配件</a></li>
+                <li id="life"><a href="">生活</a></li>
                 <li><a href="">Flyme</a></li>
                 <li><a href="">服务</a></li>
                 <li><a href="">专卖店</a></li>
@@ -30,7 +30,53 @@ let header = `
                 <li><a href="">我的订单</a></li>
                 <li><a href="">M码通道</a></li>
             </ul></span>
-            <span class="iconfont icon-gouwuche"></span>
+            <a href="../html/cart.html"><span class="iconfont icon-gouwuche"></span></a>
         </nav>
+        <div class="navigation_wrap">
+        <ul class="navigation_container nav_phone ">
+            <li>
+                <img src="../img/meizu17pro.png" alt="">
+                <p>【热卖】魅族17 Pro</p>
+                <p>￥ 4699</p>
+            </li>
+            <li>
+            <img src="../img/meizu17pro/bigimg.jpg" alt="">
+            <p>【热卖】魅族17 Pro</p>
+            <p>￥ 4699</p>
+        </li>
+            <li>
+            <img src="../img/meizu17pro/bigimg3.jpg" alt="">
+            <p>【热卖】魅族17 Pro</p>
+            <p>￥ 4699</p>
+            </li>
+            <li>
+            <img src="../img/17limited.png" alt="">
+            <p>【热卖】魅族17 Pro</p>
+            <p>￥ 4699</p>
+            </li>
+            <li>
+            <img src="../img/meizu17pro/bigimg4.jpg" alt="">
+            <p>【热卖】魅族17 Pro</p>
+            <p>￥ 4699</p>
+            </li>
+            <li>
+                <img src="../img/16spro.png" alt="">
+                <p>【热卖】魅族17 Pro</p>
+                <p>￥ 4699</p>
+            </li>
+            <li>
+                <img src="../img/16xs.png" alt="">
+                <p>【热卖】魅族17 Pro</p>
+                <p>￥ 4699</p>
+            </li>
+           
+            <li>
+                <img src="../img/meizu17pro/bigimg2.jpg" alt="">
+                <p>【热卖】魅族17 Pro</p>
+                <p>￥ 4699</p>
+            </li>
+        </ul>
+
+    </div>
 `
 export { header };

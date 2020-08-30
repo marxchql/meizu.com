@@ -112,6 +112,38 @@
                     margin: 0 12px;
                 }
              }
+             li:first-child{
+                position: relative;
+                .weixin_adver{
+                    width: 180px;
+                    height: 0px;
+                    position: absolute;
+                    z-index: 9999999;
+
+                    top: -180px;
+                    left: -100px;
+                }
+                    &:hover  .weixin_adver{
+                        height: 180px;
+
+                    }
+             }
+             li:nth-child(2){
+                position: relative;
+                .lianjie_adver{
+                    width: 180px;
+                    height: 0px;
+                    position: absolute;
+                    z-index: 9999999;
+                    top: -180px;
+                    left: -100px;
+
+                }
+                &:hover  .lianjie_adver{
+                    height: 180px;
+
+                }
+             }
                
            }
     }

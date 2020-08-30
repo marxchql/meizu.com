@@ -11,7 +11,66 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <!-- <div class="navigation_wrap">
+            <ul class="navigation_container">
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+                <li>
+                    <img src="../img/meizu17pro.png" alt="">
+                    <p>【热卖】魅族17 Pro</p>
+                    <p>￥ 4699</p>
+                </li>
+            </ul>
+
+        </div> -->
+
+    </header>
+
+    <!-- header中li触发的二级导航 -->
+
+
+    <!-- 遮罩层 -->
+    <div class="hadow">
+        <div class="confirm">
+            <p>商品已经加入购物车</p>
+            <a href="../html/cart.html" target="_blank">去购物车结算</a>
+            <!-- <span class="daojishi"> </span> -->
+        </div>
+    </div>
 
     <!-- n粘性定位的提示行 -->
     <div class="meizu17pro_wrap">
@@ -30,30 +89,46 @@
     <!-- 魅族商品详情 -->
     <div class="main">
         <div class="phoneDetail_left">
-            <div class="bigimg">
+            <div class="bigimg bigimg0">
                 <img src="../img/meizu17pro/bigimg.jpg" alt="">
+                <div class="movebox hide"></div>
             </div>
             <div class="bigimg bigimg1">
                 <img src="../img/meizu17pro/bigimg2.jpg" alt="">
+                <div class="movebox hide"></div>
+
             </div>
             <div class="bigimg bigimg2">
                 <img src="../img/meizu17pro/bigimg3.jpg" alt="">
+                <div class="movebox hide"></div>
+
             </div>
             <div class="bigimg bigimg3">
                 <img src="../img/meizu17pro/bigimg4.jpg" alt="">
+                <div class="movebox hide"></div>
+
             </div>
 
+            <div class="bigshowWrap"></div>
+            <div class="bigshow hide">
+                <img src="../img/meizu17pro/bigimg.jpg" class="img img0 hide" alt="">
+                <img src="../img/meizu17pro/bigimg2.jpg" class="img img1 hide" alt="">
+                <img src="../img/meizu17pro/bigimg3.jpg" class="img2 hide img" alt="">
+                <img src="../img/meizu17pro/bigimg4.jpg" class="img3 hide img" alt="">
+            </div>
+
+
             <ul>
-                <li>
+                <li class="small1">
                     <img src="../img/meizu17pro/small1.jpg" alt="">
                 </li>
-                <li>
+                <li class="small2">
                     <img src="../img/meizu17pro/small2.jpg" alt="">
                 </li>
-                <li>
+                <li class="small3">
                     <img src="../img/meizu17pro/small3.jpg" alt="">
                 </li>
-                <li>
+                <li class="small4">
                     <img src="../img/meizu17pro/small4.jpg" alt="">
                 </li>
             </ul>
@@ -93,7 +168,7 @@
                 </div>
                 <div class="huabei">
                     <span>网络类型</span>
-                    <button>全网通公开版</button>
+                    <button style="outline: none; border: 1px solid rgb(0, 0, 0);">全网通公开版</button>
                 </div>
                 <div class="huabei">
                     <span>颜色分类</span>
@@ -126,11 +201,11 @@
                 </div>
                 <div class="count">
                     <span style="color: gray;">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</span>
-                    <button>-</button><input type="text" name="" id=""><button>+</button>
+                    <button class="remove">-</button><input type="text" name="" id="phoneCount" value="1"><button class="add">+</button>
                 </div>
             </div>
-            <a href="" class="buy">立即购买</a>
-            <a href="" class="car">加入购物车</a>
+            <a href="../html/cart.html" target="_blank" class="buy">立即购买</a>
+            <a href="javascript:;" class="car">加入购物车</a>
 
 
         </div>

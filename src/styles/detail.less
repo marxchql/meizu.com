@@ -9,6 +9,70 @@ html,body{
     height: 1000px;
     // background-color: cadetblue;
 }
+.hadow{
+    display: none;
+}
+.shadow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: rgba(54, 54, 54, 0.178);
+    .confirm{
+        border: 1px solid rgb(206, 206, 206);
+        border-radius: 20px;
+        box-shadow: 0 12px 16px 0 rgba(136, 136, 136, 0.45);
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 300px;
+        height: 150px;
+        background-color: #fff;
+        p{
+            text-align: center;
+            letter-spacing: 1px;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            color: rgb(59, 59, 59);
+        }
+        a{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: rgb(0, 174, 255);
+        }
+        span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid gray;
+        }
+    }
+}
+// 类名添加移除切换
+.fadeshow{
+    z-index: 9999;
+    // display: block;
+}
+.fadehide{
+    z-index: 8888;
+    // display: none;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
 a{
     text-decoration: none;
     color: black;
@@ -19,6 +83,7 @@ header{
 }
 .meizu17pro_wrap{
     position: absolute;
+    z-index: 33;
     top: 82px;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -65,7 +130,7 @@ header{
     height: 1000px;
     margin: 0 auto;
     // background-color: green;
-    margin-top: 70px;
+    margin-top: 50px;
     padding-top: 100px;
     .phoneDetail_left{
         position: relative;
@@ -81,7 +146,37 @@ header{
                 height: 500px;
 
             }
+            .movebox{
+                width: 140px;
+                height: 140px;
+                background-color: rgba(0, 106, 206, 0.281);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
+        .bigshow{
+            z-index: 999999;
+            width:600px;
+            height: 600px;
+            background-color: white;
+            position: fixed;
+            top: 50px;
+            right: 260px;
+            border: 1px solid rgb(224, 224, 224);
+            overflow: hidden;
+            box-shadow: 0 19px 24px 0 rgba(110, 110, 110, 0.45);
+            border-radius: 30px;
+            img{
+                position: absolute;
+                width: 1200px;
+                height: 1200px;
+                top: 0;
+                left: 0;
+            }
+
+        }
+        
       ul{
           list-style: none;
           position: absolute;
@@ -236,7 +331,7 @@ header{
               
              }
              input{
-                //  position: r
+                vertical-align: middle;
                  width: 40px;
                  border: none;
                  border-top: 1px solid rgb(230, 230, 230);
@@ -275,11 +370,11 @@ header{
             text-align: center;
             color: rgb(0, 140, 255);
             background-color: rgb(255, 255, 255);
-            &:hover{
-                background-color: rgb(0, 140, 255);
-                color: white;
-                border: none;
-            }
+            // &:hover{
+            //     background-color: rgb(0, 140, 255);
+            //     color: white;
+            //     // border: none;
+            // }
         }
     }
 
