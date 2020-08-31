@@ -12,6 +12,7 @@ html,body{
         width: 110px;
         height: 20px;
         margin: 24px;
+    
        img{
            width: 110px;
            height: 20px;
@@ -27,7 +28,7 @@ html,body{
     .register{
         width: 298px;
         border-radius: 15px;
-        // height: 400px;
+        height: 377px;
         position: absolute;
         padding: 60px 35px 35px 35px;
         top: 17%;
@@ -60,6 +61,8 @@ html,body{
              border: 1px rgb(177, 177, 177) solid;
              padding: 0 10px;
              border-radius: 3px;
+
+            //  outline-color: rgb(245, 147, 56);
              outline-color: rgb(56, 115, 245);
              user-select: none;
              
@@ -81,12 +84,26 @@ html,body{
             }
            
         }
+        .username{
+            position: relative;
+            top: -12px;
+            // margin-top: -10px;
+            color: red;
+            font-size: 12px;
+        }
+        .password{
+            position: relative;
+            top: -12px;
+            color: red;
+            font-size: 12px;
+        }
         #login{
             display: block;
             margin: 25px  15px 15px 10px;
             width: 272px;
             height: 50px;
-            background-color: rgb(0, 84, 240);
+            // background-color: rgb(0, 84, 240);
+            background-color: gray;
             border: none;
             border-radius: 3px;
             color: white;
@@ -94,10 +111,7 @@ html,body{
             text-align: center;
             line-height: 50px;
             text-decoration: none;
-            &:hover{
-            background-color: rgb(52, 109, 214);
-
-            }
+            
         }
         .register_footer>a{
             text-decoration: none;

@@ -6,10 +6,22 @@ $(function() {
     //引入header以及footer
     $('header').html(header);
     $('footer').html(footer);
+    $('.application').hover(function() {
+        $('header').css({
+            "background": "white",
+
+        })
+    }, function() {
+
+        $('header').css({
+            "background": "transparent",
+
+        })
+    })
     $('#mobilePhone').hover(
         function() {
-            // console.log($('.navigation_wrap'));
             $('.navigation_wrap').css({
+                "opacity": "1",
                 "height": "210px",
                 "background": "white",
             });
@@ -19,10 +31,12 @@ $(function() {
         },
         function() {
             $('header').css({
-                // "background": "transparent",
                 // "height": "210px",
+                "background": "transparent",
             });
             $('.navigation_wrap').css({
+                // "opacity": ".2",
+
                 "height": "0"
             })
         }
@@ -30,6 +44,7 @@ $(function() {
     $('.navigation_wrap').hover(
         function() {
             $('.navigation_wrap').css({
+
                 "height": "210px",
                 "background": "white",
             });
@@ -39,11 +54,13 @@ $(function() {
         },
         function() {
             $('header').css({
-                "background": "rgba(255, 255, 255, 0.993)",
+                "transition": "all .6s",
+                "background": "transparent",
                 // "height": "210px",
             });
             $('.navigation_wrap').css({
-                "height": "0"
+                "height": "0",
+                "opacity": ".2",
             })
             $('.nav_phone li').css({
                 "opacity": "1",
@@ -54,10 +71,12 @@ $(function() {
 
     $('.nav_phone li').on('mouseover', function() {
         $(this).css({
+            "transform": "scale(1.1)",
             "opacity": "1",
             "box-shadow": "0 6px 8px 0 rgba(138,153,150,0.35)"
         }).siblings().css({
-            "opacity": ".7",
+            "transform": "scale(1)",
+            "opacity": ".3",
             "box-shadow": "none"
         })
     })

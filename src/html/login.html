@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEIZU登录页面</title>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" type="module"></script>
 </head>
 
 <body>
     <!-- 登录页面顶部魅族 -->
     <div id="header">
         <div class="meizu_logo">
-            <img src="../img/logo.png" alt="">
+            <a href="../html/index.html">
+
+                <img src="../img/logo.png" alt="">
+            </a>
         </div>
     </div>
 
@@ -26,17 +30,19 @@
             </div>
 
             <!-- 用户密码 -->
-            <form action="">
+            <div>
                 <input type="text" id="username" name="username" placeholder="手机号 / Flyme账号">
+                <span class="username"></span>
                 <input type="password" id="password" name="password" placeholder="密码">
-            </form>
+                <span class="password"></span>
+            </div>
             <input type="checkbox" class="checkbox"><span class="rem">记住登录状态</span>
 
 
 
-            <a id="login" href="">登录</a>
+            <a id="login" href="javascript:;">登录</a>
 
-            <div class="register_footer"> <a href="">注册</a><a href="">忘记密码？</a></div>
+            <div class="register_footer"> <a href="../html/register.html">注册</a><a href="">忘记密码？</a></div>
 
         </div>
 

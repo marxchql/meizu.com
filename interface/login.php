@@ -1,0 +1,24 @@
+<?php
+     include('./conn.php');
+
+
+     $username=$_REQUEST['username'];
+     $password=$_REQUEST['password'];
+  
+     $sql="select * from meiusers where username='$username'and password='$password'";
+     $result=$mysqli->query($sql);
+     if($result->num_rows>0){
+        //  echo 'rwerwer5345345were';
+        
+    //     $insert="insert into meiusers (phone,password,email) values('$phone','$password','$email')";
+    //    $res= $mysqli->query($insert);
+    //    $mysqli->close();
+    //   ;
+        echo '{"status":200,"msg":"登录成功","login":true,"has":false}';
+    }else{
+        
+        echo '{"status":300,"msg":"密码不正确","login":false,"has":true}';
+            // echo 'rwerwerwere';
+ 
+         }
+?>

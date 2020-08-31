@@ -20,7 +20,8 @@ header nav {
   margin: 0 auto;
   height: 80px;
 }
-header nav > span:first-child {
+header nav > a:first-child {
+  display: inline-block;
   font-size: 22px ;
   color: #006bcf;
   line-height: 82px;
@@ -445,4 +446,32 @@ header nav .header_right span.icon-1:hover .user {
   width: 22px;
   height: 20px;
   margin: 0 12px;
+}
+.footerWrp .footer_right ul li:first-child {
+  position: relative;
+}
+.footerWrp .footer_right ul li:first-child .weixin_adver {
+  width: 180px;
+  height: 0px;
+  position: absolute;
+  z-index: 9999999;
+  top: -180px;
+  left: -100px;
+}
+.footerWrp .footer_right ul li:first-child:hover .weixin_adver {
+  height: 180px;
+}
+.footerWrp .footer_right ul li:nth-child(2) {
+  position: relative;
+}
+.footerWrp .footer_right ul li:nth-child(2) .lianjie_adver {
+  width: 180px;
+  height: 0px;
+  position: absolute;
+  z-index: 9999999;
+  top: -180px;
+  left: -100px;
+}
+.footerWrp .footer_right ul li:nth-child(2):hover .lianjie_adver {
+  height: 180px;
 }

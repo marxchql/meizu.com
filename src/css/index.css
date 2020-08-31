@@ -21,7 +21,8 @@ header nav {
   margin: 0 auto;
   height: 80px;
 }
-header nav > span:first-child {
+header nav > a:first-child {
+  display: inline-block;
   color: black;
   font-size: 22px ;
   color: #006bcf;
@@ -58,7 +59,7 @@ header nav > ul li:last-child div {
   height: 0px;
   position: absolute;
   top: 70px;
-  left: -980px;
+  left: -1000px;
   background-color: white;
   overflow: hidden;
   text-align: center;
@@ -84,9 +85,10 @@ header nav .search {
 }
 header nav .search input {
   margin: 0 10px;
-  width: 130px;
+  width: 120px;
   position: relative;
   top: -2px;
+  left: 0px;
   font-size: 12px;
   color: gray;
   border: none;
@@ -143,6 +145,7 @@ header nav span.icon-wode:hover .user {
 header .navigation_wrap {
   position: absolute;
   top: 82px;
+  box-shadow: 0 22px 34px 0 rgba(122, 134, 132, 0.45);
   z-index: 999999;
   width: 100%;
   height: 0px;
@@ -154,26 +157,27 @@ header .navigation_wrap .navigation_container {
   margin: 0 auto;
   list-style: none;
   width: 1236px;
-  overflow: hidden;
 }
 header .navigation_wrap .navigation_container li {
   float: left;
   text-align: center;
+  width: 123px;
+  height: 173px;
   transition: all 0.2s;
   border-radius: 14px;
+  padding: 10px 0;
   margin: 10px 12px;
-  padding-bottom: 10px;
 }
 header .navigation_wrap .navigation_container li img {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
 }
 header .navigation_wrap .navigation_container li p {
   color: gray;
   font-size: 12px;
 }
 .swiper-container {
-  width: 1536px;
+  width: 100%;
   height: 680px;
 }
 .bannerDown {
@@ -229,7 +233,7 @@ header .navigation_wrap .navigation_container li p {
   font-size: 26px;
 }
 .phoneWrap_bg > .phonebanner {
-  width: 1536px;
+  width: 100%;
   height: 450px;
   margin: 16px auto;
   transition: all 0.2s;
@@ -331,6 +335,28 @@ header .navigation_wrap .navigation_container li p {
 .phoneWrap_bg ul #first_ear:hover {
   transform: translateY(0);
   box-shadow: none;
+}
+.phoneWrap_bg ul #first_ear a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.phoneWrap_bg ul #first_ear a span {
+  position: relative;
+  top: 90px;
+}
+.phoneWrap_bg ul #first_ear a span.count {
+  font-size: 24px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  line-height: 56px;
+  width: 50px;
+  height: 56px;
+  margin: 0 10px;
+  background-color: #a7a7a7;
+  color: #ffffff !important;
+  font-weight: bold;
 }
 .phoneWrap_bg ul #first_ear a p:nth-child(1) {
   font-size: 20px;

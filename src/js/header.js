@@ -1,6 +1,8 @@
 let header = `
         <nav>
-            <span class="iconfont icon-meizu"></span>
+        <a href="../html/index.html">
+        <span class="iconfont icon-meizu"></span>
+        </a>
             <ul>
                 <li id="mobilePhone"><a href="">手机</a></li>
                 <li id="vocal"><a href="">声学</a></li>
@@ -11,9 +13,9 @@ let header = `
                 <li><a href="">专卖店</a></li>
                 <li><a href="">社区</a></li>
                 <li><a href="">政企定制</a></li>
-                <li>APP下载
+                <li class="application">APP下载
                     <div class="appDown">
-                        <img src="../img/APPdown1.jpg" alt="">
+                        <img  class="lazy" data-original="../img/APPdown1.jpg" alt="">
                     </div>
                 </li>
             </ul>
@@ -35,43 +37,43 @@ let header = `
         <div class="navigation_wrap">
         <ul class="navigation_container nav_phone ">
             <li>
-                <img src="../img/meizu17pro.png" alt="">
+                <img  class="lazy" data-original="../img/meizu17pro.png" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>
             <li>
-            <img src="../img/meizu17pro/bigimg.jpg" alt="">
+            <img  class="lazy" data-original="../img/meizu17pro/bigimg.jpg" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
         </li>
             <li>
-            <img src="../img/meizu17pro/bigimg3.jpg" alt="">
+            <img  class="lazy" data-original="../img/meizu17pro/bigimg3.jpg" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
             </li>
             <li>
-            <img src="../img/17limited.png" alt="">
+            <img  class="lazy" data-original="../img/17limited.png" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
             </li>
             <li>
-            <img src="../img/meizu17pro/bigimg4.jpg" alt="">
+            <img  class="lazy" data-original="../img/meizu17pro/bigimg4.jpg" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
             </li>
             <li>
-                <img src="../img/16spro.png" alt="">
+                <img  class="lazy" data-original="../img/16spro.png" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>
             <li>
-                <img src="../img/16xs.png" alt="">
+                <img  class="lazy" data-original="../img/16xs.png" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>
            
             <li>
-                <img src="../img/meizu17pro/bigimg2.jpg" alt="">
+                <img  class="lazy" data-original="../img/meizu17pro/bigimg2.jpg" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>

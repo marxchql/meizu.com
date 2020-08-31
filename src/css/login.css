@@ -28,6 +28,7 @@ body {
 #bgbox .register {
   width: 298px;
   border-radius: 15px;
+  height: 377px;
   position: absolute;
   padding: 60px 35px 35px 35px;
   top: 17%;
@@ -78,12 +79,24 @@ body {
 #bgbox .register .rem:hover {
   color: black;
 }
+#bgbox .register .username {
+  position: relative;
+  top: -12px;
+  color: red;
+  font-size: 12px;
+}
+#bgbox .register .password {
+  position: relative;
+  top: -12px;
+  color: red;
+  font-size: 12px;
+}
 #bgbox .register #login {
   display: block;
   margin: 25px  15px 15px 10px;
   width: 272px;
   height: 50px;
-  background-color: #0054f0;
+  background-color: gray;
   border: none;
   border-radius: 3px;
   color: white;
@@ -91,9 +104,6 @@ body {
   text-align: center;
   line-height: 50px;
   text-decoration: none;
-}
-#bgbox .register #login:hover {
-  background-color: #346dd6;
 }
 #bgbox .register .register_footer > a {
   text-decoration: none;

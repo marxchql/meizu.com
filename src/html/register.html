@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEIZU注册页面</title>
     <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/register.js" type="module"></script>
 </head>
 
 <body>
     <!-- 登录页面顶部魅族 -->
     <div id="header">
         <div class="meizu_logo">
-            <img src="../img/logo.png" alt="">
+            <a href="../html/index.html">
+
+                <img src="../img/logo.png" alt="">
+            </a>
         </div>
     </div>
 
@@ -27,14 +31,17 @@
             <!-- 用户密码 -->
             <form action="">
 
-                <input type="text" id="username" name="username" placeholder="手机号">
+                <input type="text" id="phone" name="phone" placeholder="手机号">
+                <span class="phone"></span>
                 <input type="password" id="password" name="password" placeholder="密码">
+                <span class="password"></span>
                 <input type="email" id="email" name="email" placeholder="邮箱">
+                <span class="email"></span>
             </form>
 
             <!-- <input type="checkbox" class="checkbox"><span class="rem">记住登录状态</span> -->
 
-            <a id="login" href="">注册</a>
+            <a id="login" href="javascript:;">注册</a>
 
             <!-- <div class="register_footer"> <a href="">注册</a><a href="">忘记密码？</a></div> -->
 
