@@ -79,7 +79,7 @@ body {
 #bgbox .register .rem:hover {
   color: black;
 }
-#bgbox .register .username {
+#bgbox .register .phone {
   position: relative;
   top: -12px;
   color: red;

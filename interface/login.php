@@ -2,10 +2,13 @@
      include('./conn.php');
 
 
-     $username=$_REQUEST['username'];
+     $phone=$_REQUEST['phone'];
      $password=$_REQUEST['password'];
+     echo  $phone;
+     echo $password;
+    //  die();
   
-     $sql="select * from meiusers where username='$username'and password='$password'";
+     $sql="select * from meiusers where phone='$phone'and password='$password'";
      $result=$mysqli->query($sql);
      if($result->num_rows>0){
         //  echo 'rwerwer5345345were';
@@ -14,10 +17,10 @@
     //    $res= $mysqli->query($insert);
     //    $mysqli->close();
     //   ;
-        echo '{"status":200,"msg":"登录成功","login":true,"has":false}';
+        // echo '{"status":200,"msg":"登录成功","login":true,"has":false}';
     }else{
         
-        echo '{"status":300,"msg":"密码不正确","login":false,"has":true}';
+        // echo '{"status":300,"msg":"密码不正确","login":false,"has":true}';
             // echo 'rwerwerwere';
  
          }
