@@ -217,6 +217,9 @@ header nav .header_right span.icon-1:hover .user {
   position: relative;
   background-color: #ffffff;
 }
+.main_wrap .main .commodity_phone img {
+  margin: 0 70px;
+}
 .main_wrap .main .commodity_phone > span {
   display: inline-block;
   line-height: 24px;
@@ -229,6 +232,8 @@ header nav .header_right span.icon-1:hover .user {
 .main_wrap .main .commodity_phone .right {
   float: right;
   margin: 40px;
+  position: relative;
+  padding-right: 200px;
 }
 .main_wrap .main .commodity_phone .right span:first-child {
   color: #5f5f5f;
@@ -250,6 +255,9 @@ header nav .header_right span.icon-1:hover .user {
   outline: none;
   vertical-align: middle;
 }
+.main_wrap .main .commodity_phone .right span:nth-of-type(2) button:hover {
+  background-color: #eeeeee;
+}
 .main_wrap .main .commodity_phone .right span:nth-of-type(2) input {
   vertical-align: middle;
   width: 30px;
@@ -257,19 +265,35 @@ header nav .header_right span.icon-1:hover .user {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   height: 30px;
-  text-indent: 15px;
+  text-indent: 11px;
   outline: none;
 }
 .main_wrap .main .commodity_phone .right span:last-of-type {
+  position: absolute;
+  top: 4px;
+  right: 15px;
   color: #b30000;
   font-size: 16px;
   margin-right: 127px;
 }
 .main_wrap .main .commodity_phone .right a {
   display: inline-block;
+  position: relative;
+  left: 190px;
   text-decoration: none;
   color: gray;
   font-size: 12px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.main_wrap .main .commodity_phone .right a:hover {
+  color: white;
+  background-color: red;
+  border: none;
 }
 .main_wrap .main .commodity_footer {
   padding-top: 14px;

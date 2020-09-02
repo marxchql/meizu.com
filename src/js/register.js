@@ -1,4 +1,6 @@
 import $ from './jquery.js';
+import './lib/index.js';
+
 // 验证登录
 $("#phone").on('input', function() {
     let ze1 = /^[1][3-9]\d{9}$/;
@@ -121,14 +123,15 @@ $('#login').on('click', function() {
         type: "post",
         url: "../../interface/register.php",
         data: {
-            "phone": $('#phone').val(),
-            "password": $('#password').val(),
-            "email": $('#email').val(),
+            "phone": $.md5($('#phone').val()),
+            "password": $.md5($('#password').val()),
+            "email": $.md5($('#email').val()),
         },
         dataType: 'json',
         success: function(res) {
             if (res.register) {
                 // console.log(res);
+                localStorage.setItem("user", $.md5($('#phone').val()))
 
                 alert(res.msg);
                 location.href = "../html/login.html"

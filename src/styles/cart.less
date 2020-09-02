@@ -231,6 +231,10 @@ header{
         height: 150px;
         position: relative;
         background-color: rgb(255, 255, 255);
+        img{
+            margin:0 70px;
+
+        }
         >span{
             display: inline-block;
             // color: red;
@@ -247,16 +251,21 @@ header{
         .right{
             float:right;
             margin: 40px;
+            position: relative;
+            padding-right: 200px;
             span:first-child{
                 color:rgb(95, 95, 95);
                 font-size: 16px;
                 margin-right: 104px;
             }
             span:nth-of-type(2){
+                // position: absolute;
+                // top: 10px;
+                // left: 10px;
                 margin-right: 80px;
                         button{
                         border: 1px solid rgb(216, 216, 216);       
-                    border-radius: 0px;
+                        border-radius: 0px;
                         background-color: rgb(255, 255, 255);
                         width: 30px !important;
                         height: 30px; 
@@ -265,6 +274,10 @@ header{
                         margin: 0;
                         outline: none;
                         vertical-align: middle;
+                        &:hover{
+                        background-color: rgb(238, 238, 238);
+
+                        }
                     
                     }
                     input{
@@ -274,20 +287,37 @@ header{
                         border-top: 1px solid rgb(230, 230, 230);
                         border-bottom: 1px solid rgb(230, 230, 230);
                         height: 30px;
-                        text-indent: 15px;
+                        text-indent: 11px;
                         outline: none;
                     }
             }
             span:last-of-type{
+                position: absolute;
+                top: 4px;
+                right: 15px;
                 color:rgb(179, 0, 0);
                 font-size: 16px;
                 margin-right: 127px;
             }
             a{
+               
                 display: inline-block;
+                position: relative;
+                left: 190px;
                 text-decoration: none;
                 color: gray;
                 font-size: 12px;
+                width: 70px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                border: 1px solid gray;
+                border-radius: 4px;
+                &:hover{
+                    color: white;
+                    background-color: red;
+                    border:none;
+                }
             }
         }
     }
@@ -333,6 +363,7 @@ header{
             span{
                 color:rgb(180, 180, 180);
                 font-size: 14px;
+               
                 // margin-right: 140px;
             }
             a{

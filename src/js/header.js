@@ -37,43 +37,43 @@ let header = `
         <div class="navigation_wrap">
         <ul class="navigation_container nav_phone ">
             <li>
-                <img  class="lazy" data-original="../img/meizu17pro.png" alt="">
+                <img  class="lazy" src="../img/meizu17pro.png" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>
             <li>
-            <img  class="lazy" data-original="../img/meizu17pro/bigimg.jpg" alt="">
+            <img  class="lazy" src="../img/meizu17pro/bigimg.jpg" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
         </li>
             <li>
-            <img  class="lazy" data-original="../img/meizu17pro/bigimg3.jpg" alt="">
+            <img  class="lazy" src="../img/meizu17pro/bigimg3.jpg" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
             </li>
             <li>
-            <img  class="lazy" data-original="../img/17limited.png" alt="">
+            <img  class="lazy" src="../img/17limited.png" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
             </li>
             <li>
-            <img  class="lazy" data-original="../img/meizu17pro/bigimg4.jpg" alt="">
+            <img  class="lazy" src="../img/meizu17pro/bigimg4.jpg" alt="">
             <p>【热卖】魅族17 Pro</p>
             <p>￥ 4699</p>
             </li>
             <li>
-                <img  class="lazy" data-original="../img/16spro.png" alt="">
+                <img  class="lazy" src="../img/16spro.png" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>
             <li>
-                <img  class="lazy" data-original="../img/16xs.png" alt="">
+                <img  class="lazy" src="../img/16xs.png" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>
            
             <li>
-                <img  class="lazy" data-original="../img/meizu17pro/bigimg2.jpg" alt="">
+                <img  class="lazy" src="../img/meizu17pro/bigimg2.jpg" alt="">
                 <p>【热卖】魅族17 Pro</p>
                 <p>￥ 4699</p>
             </li>

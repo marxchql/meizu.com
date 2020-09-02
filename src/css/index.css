@@ -297,6 +297,7 @@ header .navigation_wrap .navigation_container li p {
 }
 .phoneWrap_bg > ul li.smallintro img {
   width: 230px;
+  height: 230px;
 }
 .phoneWrap_bg > ul li.smallintro a {
   text-decoration: none;

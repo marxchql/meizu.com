@@ -1,5 +1,5 @@
 import $ from './jquery.js';
-
+import './lib/index.js';
 $(function() {
     // 验证登录
     // console.log(34535534534535);
@@ -91,8 +91,8 @@ $(function() {
             type: "post",
             url: "../../interface/login.php",
             data: {
-                "phone": $('#phone').val(),
-                "password": $('#password').val(),
+                "phone": $.md5($('#phone').val()),
+                "password": $.md5($('#password').val())
             },
             dataType: 'json',
             success: function(res) {
