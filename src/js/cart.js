@@ -38,7 +38,7 @@ import { cookie } from './lib/cookie.js';
                         <span class="calcu${i}">
                              <button class="remove${i}">-</button><input type="text" id="phoneCount${i}" value="${arr[0].num}" min="1" max="${elm.num}"><button class="add${i}">+</button>
                         </span>
-                        <span class="pro_total_price pro_total_price${i}">${(elm.price*arr[0].num).toFixed(2)}</span>
+                        <span class="pro_total_price_cal pro_total_price pro_total_price${i}">${(elm.price*arr[0].num).toFixed(2)}</span>
                         <a class="pro_Del del${i}" href="javascript:;">删除</a>
                     </div>
                     </div>
@@ -94,6 +94,7 @@ import { cookie } from './lib/cookie.js';
                         })
                         $('.selected').html('￥' + total + '.00')
                     })
+
                 });
                 $('.selected').html('￥' + total + '');
                 $('.commodity_footer').before(template);
@@ -110,19 +111,42 @@ import { cookie } from './lib/cookie.js';
                 $('.totalCount').html($('.selectItem').length)
                 $('.selectItem').each(function(i, elm) {
                     $(elm).on('click', function() {
+                        let sub1 = $(this).parent().children().last().children().eq(2);
                         let sub = $(this).parent().children().last().children().eq(2).html();
                         if (!$(elm).prop("checked")) {
+                            sub1.removeClass('pro_total_price_cal')
                             total -= sub;
                             if (total <= 0) {
                                 total = 0;
                             }
                             $('.selected').html('￥' + total + '');
                         } else {
+                            sub1.addClass('pro_total_price_cal')
                             total += parseInt(sub);
                             $('.selected').html('￥' + total + '');
                         }
+
+
+                        let total2 = 0;
+                        ($('.pro_total_price_cal')).each(function(i, elm) {
+                            let num1 = $(elm).html()
+                                // console.log(typeof num1);
+                                // console.log(num1);
+                            console.log(parseInt(num1));
+
+
+                            total2 += parseInt(num1);
+                            console.log(total2);
+                            $('.selected').html('￥' + total2 + '');
+                        })
+
+
                     })
                 })
+                console.log($('.selectItem').length);
+                if ($('.selectItem').length == 0) {
+                    $('.selected').html('￥0')
+                }
             }
         });
     }

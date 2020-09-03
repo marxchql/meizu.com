@@ -98,6 +98,7 @@ $(function() {
             success: function(res) {
                 if (res.login) {
                     // console.log(res);
+                    localStorage.setItem("user", $.md5($('#phone').val()))
 
                     alert(res.msg);
                     location.href = "../html/index.html"

@@ -8,6 +8,35 @@ $(function() {
 
     $('header').html(header);
     $('footer').html(footer);
+    let ww = localStorage.getItem("user");
+    if (localStorage.getItem("user")) {
+        $('.icon-gouwuche').before('<span class="userLogined">退出用户</span>')
+
+
+    } else {
+        $('.icon-wode').remove();
+        $('.userLogined').remove();
+        $('.icon-gouwuche').before(` <span class="iconfont icon-wode">
+        <ul class="user">
+        <li><a href="../html/login.html" target="_blank">立即登录</a></li>
+        <li><a href="../html/register.html" target="_blank">立即注册</a></li>
+        <li><a href="">我的订单</a></li>
+        <li><a href="">M码通道</a></li>
+    </ul></span>`)
+    }
+    $('.userLogined').on('click', function() {
+        localStorage.removeItem("user");
+        location.href = "../html/index.html";
+    })
+    $('.icon-gouwuche').on('click', function() {
+        console.log(11);
+        if (localStorage.getItem("user")) {
+
+            location.href = "../html/cart.html";
+        } else {
+            alert("请先登录账号")
+        }
+    })
 
 
     $('.application').hover(function() {

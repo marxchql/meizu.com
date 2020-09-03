@@ -1,15 +1,7 @@
-import $ from './jquery.js';
-import { header } from './header.js';
-import { footer } from './footer.js';
 import { cookie } from './lib/cookie.js';
 
-
-(function() {
-    $('header').html(header);
-    $('footer').html(footer);
+let ajax = function() {
     let id = location.search.split('=')[1]; // 获取id
-    // console.log(id);
-
 
     $.ajax({
         type: "get",
@@ -24,64 +16,64 @@ import { cookie } from './lib/cookie.js';
             let picture = JSON.parse(res.picture);
 
             let template = `
-            <div class="bigimg bigimg0">
-            <img src="..${picture[5].src}" alt="">
-            <div class="movebox hide"></div>
-        </div>
-        <div class="bigimg bigimg1">
-            <img src="..${picture[6].src}" alt="">
-            <div class="movebox hide"></div>
+        <div class="bigimg bigimg0">
+        <img src="..${picture[5].src}" alt="">
+        <div class="movebox hide"></div>
+    </div>
+    <div class="bigimg bigimg1">
+        <img src="..${picture[6].src}" alt="">
+        <div class="movebox hide"></div>
 
-        </div>
-        <div class="bigimg bigimg2">
-            <img src="..${picture[7].src}" alt="">
-            <div class="movebox hide"></div>
+    </div>
+    <div class="bigimg bigimg2">
+        <img src="..${picture[7].src}" alt="">
+        <div class="movebox hide"></div>
 
-        </div>
-        <div class="bigimg bigimg3">
-            <img src="..${picture[8].src}" alt="">
-            <div class="movebox hide"></div>
+    </div>
+    <div class="bigimg bigimg3">
+        <img src="..${picture[8].src}" alt="">
+        <div class="movebox hide"></div>
 
-        </div>
+    </div>
 
-        <div class="bigshowWrap"></div>
-        <div class="bigshow hide">
-            <img src="..${picture[5].src}" class="img img0 hide" alt="">
-            <img src="..${picture[6].src}" class="img img1 hide" alt="">
-            <img src="..${picture[7].src}" class="img2 hide img" alt="">
-            <img src="..${picture[8].src}" class="img3 hide img" alt="">
-        </div>
+    <div class="bigshowWrap"></div>
+    <div class="bigshow hide">
+        <img src="..${picture[5].src}" class="img img0 hide" alt="">
+        <img src="..${picture[6].src}" class="img img1 hide" alt="">
+        <img src="..${picture[7].src}" class="img2 hide img" alt="">
+        <img src="..${picture[8].src}" class="img3 hide img" alt="">
+    </div>
 
 
-        <ul>
-            <li class="small1">
-                <img src="..${picture[1].src}" alt="">
-            </li>
-            <li class="small2">
-                <img src="..${picture[2].src}" alt="">
-            </li>
-            <li class="small3">
-                <img src="..${picture[3].src}" alt="">
-            </li>
-            <li class="small4">
-                <img src="..${picture[4].src}" alt="">
-            </li>
-        </ul>
-            `;
+    <ul>
+        <li class="small1">
+            <img src="..${picture[1].src}" alt="">
+        </li>
+        <li class="small2">
+            <img src="..${picture[2].src}" alt="">
+        </li>
+        <li class="small3">
+            <img src="..${picture[3].src}" alt="">
+        </li>
+        <li class="small4">
+            <img src="..${picture[4].src}" alt="">
+        </li>
+    </ul>
+        `;
 
 
 
 
             let template1 = `
-            <div class="title">
-                <p>${res.title}</p>
-                <p>${res.details}</p>
-            </div>
-            <div class="price">
-                <p>￥ ${res.price}</p>
-                <span>加价购</span><span> &nbsp;&nbsp; 另加29元起，即可换购超值商品&nbsp;&nbsp;</span><a href="">立即加购 ></a>
-            </div>
-            `;
+        <div class="title">
+            <p>${res.title}</p>
+            <p>${res.details}</p>
+        </div>
+        <div class="price">
+            <p>￥ ${res.price}</p>
+            <span>加价购</span><span> &nbsp;&nbsp; 另加29元起，即可换购超值商品&nbsp;&nbsp;</span><a href="">立即加购 ></a>
+        </div>
+        `;
             $('.phoneDetail_right').prepend(template1);
             $('.phoneDetail_left').append(template);
             $('.car').on('click', function() {
@@ -92,6 +84,7 @@ import { cookie } from './lib/cookie.js';
                 }, 3000);
             });
             $('.buy').on('click', function() {
+                console.log(222);
                 addItem(res.id, res.price, $('#phoneCount').val());
             });
             fangdajing();
@@ -214,14 +207,9 @@ import { cookie } from './lib/cookie.js';
 
         cookie.set('shop', JSON.stringify(shop), 1);
     }
+}
 
-
-})();
-
-
-
-$(function() {
-    //引入header以及footer
+let headerAnimate = function() {
     $('.application').hover(function() {
         $('header').css({
             "background": "white",
@@ -297,37 +285,8 @@ $(function() {
         })
     })
 
+}
 
 
-
-
-
-
-
-
-
-
-
-
-    // 数量点击增加减少
-
-
-    var meizuCount = 1;
-    $('.add').on('click', function() {
-        meizuCount++;
-
-        $('#phoneCount').val(meizuCount)
-
-    });
-    $('.remove').on('click', function() {
-        meizuCount--
-        if (meizuCount <= 1) {
-            meizuCount = 1
-        }
-        $('#phoneCount').val(meizuCount)
-    })
-
-
-
-
-});
+export { ajax };
+export { headerAnimate };

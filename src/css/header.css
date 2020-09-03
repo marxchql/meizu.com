@@ -98,6 +98,18 @@ header nav .icon-gouwuche {
   font-weight: bold;
   vertical-align: top;
 }
+header nav .userLogined {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  position: relative;
+  top: -37px;
+  margin: 0 6px;
+}
+header nav .userLogined:visited {
+  text-decoration: none;
+}
 header nav span.icon-wode {
   display: inline-block;
   position: relative;

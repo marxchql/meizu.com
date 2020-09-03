@@ -32,7 +32,7 @@ let header = `
                 <li><a href="">我的订单</a></li>
                 <li><a href="">M码通道</a></li>
             </ul></span>
-            <a href="../html/cart.html"><span class="iconfont icon-gouwuche"></span></a>
+           <span class="iconfont icon-gouwuche"></span>
         </nav>
         <div class="navigation_wrap">
         <ul class="navigation_container nav_phone ">
